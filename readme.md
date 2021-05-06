@@ -72,3 +72,8 @@ El backend contiene el codigo en nodejs escrito con ecmascript 6, el cual usa co
 
 ![Alt text](docs/add.png)
 ![Alt text](docs/add1.png)
+
+
+# Nota...
+Al ejecutar el servicio únicamente con node es necesario:
+1. Dentro de la carpeta test (proyecto de angular) ejecutar el comando ng build, el cual generará una carpeta dist, está carpeta reemplazara dentro de folder api-hbs la carpeta dist que se encuentra dentro de src/views, generando la nueva carpeta dist como una carpeta pública la cual ya podrá consumir los datos de proyecto 
