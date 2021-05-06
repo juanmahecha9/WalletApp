@@ -1,0 +1,35 @@
+<main>
+    <div class="tag-container">
+        <div class="margent">
+            <div class="contenedorForm">
+                <form class="formulario" (submit)="registro()">
+                    <h1>Registro</h1>
+                    <div class="contenedor">
+                        <div class="input-contenedor">
+                            <mat-icon matSuffix>rowing</mat-icon>
+                            <input type="text" placeholder="Name" name="nombre" id="nombre" #nombre="ngModel"
+                                [(ngModel)]="user.name" autofocus ngModel required>
+                        </div>
+
+                        <div class="input-contenedor">
+                            <mat-icon matSuffix>alternate_email</mat-icon>
+                            <input required type="text" placeholder="E-Mail" name="email" id="email" #nombre="ngModel"
+                                [(ngModel)]="user.email" ngModel required>
+                        </div>
+
+                        <div class="input-contenedor">
+                            <mat-icon matSuffix>check_circle</mat-icon>
+                            <input required type="password" placeholder="Password" name="password" id="password"
+                                #nombre="ngModel" [(ngModel)]="user.password" ngModel required>
+                        </div>
+
+                        <input type="submit" value="Registrate" class="button" id="btn">
+                        <p>By registering, you agree to our Terms of Use, Privacy Policy and Data Protection.
+                            data protection.</p>
+                        <p>Already have an account? <a class="link" routerLink="/login">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>

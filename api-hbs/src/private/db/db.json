@@ -1,0 +1,9 @@
+{
+    "database": {
+      "databaseName": "UserRegister",
+      "url": "mongodb://localhost:27017/<Cluster>",
+      "web": ""
+    },
+    "user": "",
+    "password": ""
+  }

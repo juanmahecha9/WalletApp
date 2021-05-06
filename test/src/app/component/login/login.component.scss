@@ -1,0 +1,181 @@
+tag-container {
+    text-decoration: none;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Roboto, "Liberation Sans", Arial,
+        sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 2rem;
+    width: 40rem;
+    color: #000;
+    border-radius: 0rem;
+    transition: all 0.2s ease-out;
+    .margent {
+        margin-top: 10rem;
+    }
+}
+
+main {
+    background-size: cover;
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 0 auto;
+    background-attachment: fixed;
+}
+.contenedor {
+    width: 100%;
+    padding: 1px;
+}
+.formulario {
+    background-color: rgba(165, 165, 165, 0.8);
+
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+input[type="text"],
+input[type="password"] {
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+    background: rgba(240, 240, 240, 0.5);
+}
+
+.input-contenedor {
+    margin-bottom: 15px;
+    border: 1px solid white;
+}
+
+.icon {
+    min-width: 50px;
+    text-align: center;
+    color: white;
+}
+
+.button {
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background: #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: cadetblue;
+    transition: all 0.5s ease;
+}
+p {
+    text-align: center;
+    color: white;
+}
+.link {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.link:hover {
+    color: cadetblue;
+}
+.contenderorForm {
+    width: 100%;
+}
+
+.contenedor {
+    width: 100%;
+    padding: 1px;
+}
+
+.formulario {
+    background-color: rgba(165, 165, 165, 0.8);
+
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+input[type="text"],
+input[type="password"] {
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+    background: rgba(240, 240, 240, 0.5);
+}
+
+.input-contenedor {
+    margin-bottom: 15px;
+    border: 1px solid white;
+}
+
+.icon {
+    min-width: 50px;
+    text-align: center;
+    color: white;
+}
+
+.button {
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background: #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: cadetblue;
+    transition: all 0.5s ease;
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.link:hover {
+    color: cadetblue;
+}
+
+@media (max-width: 1500px) {
+    .tag-container {
+        .margent {
+            margin-top: 6rem;
+        }
+    }
+}
+@media (max-width: 700px) {
+    .tag-container {
+        width: 95%;
+        margin: auto;
+    }
+}
+
+
+.visibility{
+    display: none;
+}

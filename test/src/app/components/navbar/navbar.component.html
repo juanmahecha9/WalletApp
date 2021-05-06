@@ -1,0 +1,33 @@
+<nav class="navbar sticky-top navbar-expand-lg bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Wallet</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <mat-icon style="color: aliceblue;">menu</mat-icon>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink="/home">Home </a>
+                </li>
+                <a class="nav-link" [routerLink]="linkForm">Form.</a>
+                <ng-container *ngIf="!auth.loggedIn(); else cerrarSesion">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/login">Login.</a>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/register">Sing up.</a>
+                    </li>
+                </ng-container>
+                <ng-template #cerrarSesion>
+                    <li  class="nav-link">
+                        <a class="nav-link" [routerLink]="idNavigation">Profile.</a>
+                    </li>
+                    <li class="nav-link" (click)="cerrar()">
+                        <a class="nav-link" href="#">Close.</a>
+                    </li>
+                </ng-template>
+            </ul>
+        </div>
+    </div>
+</nav>

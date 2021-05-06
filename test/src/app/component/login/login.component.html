@@ -1,0 +1,28 @@
+<main>
+    <div class="tag-container">
+        <div class="margent">
+            <div class="contenderorForm">
+                <form class="formulario" (ngSubmit)="login()">
+                    <h1>Login</h1>
+                    <div class="contenedor">
+                        <div class="input-contenedor">
+                            <mat-icon matSuffix>alternate_email</mat-icon>
+                            <input ngModel required type="text" placeholder="E-mail" name="email" #nombre="ngModel"
+                                [(ngModel)]="user.email">
+                        </div>
+                        <div class="input-contenedor">
+                            <mat-icon matSuffix>check_circle</mat-icon>
+                            <input type="password" placeholder="Password" name="password" #nombre="ngModel"
+                                [(ngModel)]="user.password" ngModel required>
+                        </div>
+                        <input type="submit" value="Login" class="button">
+                        <p>By registering, you agree to our Terms of Use, Privacy Policy and Data Protection.
+                        </p>
+                        <p>Don't have an account? <a class="link" routerLink="/register">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</main>

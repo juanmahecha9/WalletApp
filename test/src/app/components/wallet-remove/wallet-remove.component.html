@@ -1,0 +1,39 @@
+<div class="card">
+    <div class="card-header text-center">
+        <h1>It is time to remove money!</h1>
+    </div>
+    <div class="card-body">
+        <div id="register">
+            <div id="ticket">
+                <h1>Thank You!</h1>
+                <table>
+                    <tbody id="entries">
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Balance</th>
+                            <th id="total">${{dataUser.balance}}</th>
+                        </tr>
+                        <tr>
+                            <th>Remove</th>
+                            <th id="total">${{income}}</th>
+                        </tr>
+                        <tr>
+                            <th>Total</th>
+                            <th id="total">${{total}}</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <form id="entry" name="f" [formGroup]="DataForm" class="form">
+                <input id="newEntry" type="number" autofocus placeholder="How Much?" formControlName="ValueAdd">
+            </form>
+            <div class="my-3 row justify-content-center">
+                <button class="btn btn-success" (click)="add()">Remove value...</button>
+            </div>
+            <div class="my-3 row justify-content-center">
+                <button class="btn btn-info" (click)="back()">Back wallet page.</button>
+            </div>
+        </div>
+    </div>
+</div>

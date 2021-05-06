@@ -1,0 +1,32 @@
+<div class="form-wrapper">
+    <p class="step">Sing in: {{dataUser.lastSingIn}} </p>
+    <form class="step-1">
+        <div class="form-title">
+            <div class="header">
+                <img width="15%" src="../../../assets/image/pixlr-bg-result-coin.png" alt="logo" />
+                <h2>Welcome: {{dataUser.name}}</h2>
+            </div>
+            <h5>Your register email is: </h5>
+        </div>
+        <div class="control-group amount-fields">
+            <div class="amount-field">
+                <div class="btc-amount">
+                    <form class="example-form">
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Your balance.</mat-label>
+                            <span matPrefix> $ &nbsp;</span>
+                            <input type="tel" disabled matInput [value]="dataUser.balance">
+                            <mat-icon matSuffix>attach_money</mat-icon>
+                        </mat-form-field>
+                    </form>
+                </div>
+            </div>
+            <p class="available">Available to send: <span>({{dataUser.balance}})</span></p>
+        </div>
+    </form>
+
+    <div class="actions">
+        <button class="btn btn-info mx-1" (click)="remove()">Remove</button>
+        <button class="btn btn-warning mx-1" (click)="add()">Add</button>
+    </div>
+</div>

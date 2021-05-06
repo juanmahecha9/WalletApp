@@ -1,0 +1,10 @@
+
+.DS_STORE
+.idea/
+modules/.settings
+modules/.vscode
+node_modules
+# Ignore .history for the xyz.local-history VSCode extension
+.history
+# file data mail
+src/private/emailData.json
