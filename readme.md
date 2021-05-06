@@ -19,6 +19,9 @@ El proyecto esta dividido en dos carpetas las cuales son:
 
 El backend contiene el codigo en nodejs escrito con ecmascript 6, el cual usa como compilador a babel, la base de datos esta alojada en mongo db
 
+### Manejo de datos ingresados en las pruebas con mongo db local
+![Alt text](docs/mongoDBDATA.png)
+
 # Imagenes de la interfaz
 
 ### Home
